@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-4 retro">
+    <ul>
+      <li *ngFor="let number of colleciones">
+        <span>Item 1</span>
+        <span
+          ><a (click)="removeFromCart()" class="btn btn-info"
+            >Remove From Cart</a
+          ></span
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="col-4 retrod">
+    <ul>
+      <li *ngFor="let number of colleciones">
+        <span>Item 2</span>
+        <span
+          ><a (click)="removeFromCart()" class="btn btn-info"
+            >Remove From Cart</a
+          ></span
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="col-4 retroc">
+    <ul>
+      <li *ngFor="let item of itemsPro">
+        <span>{{ item.id }}</span>
+        <span>{{ item.name }}</span>
+        <span>{{ item.price }}</span>
+        <span
+          ><a (click)="removeFromCart()" class="btn btn-info"
+            >Remove From Cart</a
+          ></span
+        >
+      </li>
+    </ul>
+  </div>
+</div>
