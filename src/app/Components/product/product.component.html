@@ -1,0 +1,11 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="my-list">
+        <h3>{{product.name}}</h3>
+        <span>$</span>
+        <span class="pull-right">{{product.price}}</span>
+        <div class="offer">
+            <a (click)="addToCart(product)" class="btn btn-info">Add To Cart</a>
+            <a (click)="removeFromCart(product)" class="btn btn-info">Remove From Cart</a>
+        </div>
+    </div>
+</div>
