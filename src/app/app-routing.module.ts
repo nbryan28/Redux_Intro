@@ -6,31 +6,36 @@ import { ProductComponent } from './Components/product/product.component';
 import { StoreModule } from '@ngrx/store';
 import { AppReducers} from './redux/app.reducer';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './Home/home/home.component';
 
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/products',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "/home",
+    pathMatch: "full",
   },
   {
-    path: 'products',
-    component: ProductsComponent
+    path: "home",
+    component: HomeComponent,
   },
   {
-    path: 'cart',
-    component: CartComponent
+    path: "products",
+    component: ProductsComponent,
   },
   {
-    path: 'product/:id',
-    component: ProductComponent
+    path: "cart",
+    component: CartComponent,
   },
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
+    path: "product/:id",
+    component: ProductComponent,
+  },
+  {
+    path: "**",
+    redirectTo: "",
+    pathMatch: "full",
+  },
 ];
 
 @NgModule({
