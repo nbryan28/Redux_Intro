@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppReducers} from './redux/app.reducer';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './Home/home/home.component';
+import { StoreComponent } from './Home/store/store.component';
 
 
 const routes: Routes = [
@@ -20,16 +21,8 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "products",
-    component: ProductsComponent,
-  },
-  {
-    path: "cart",
-    component: CartComponent,
-  },
-  {
-    path: "product/:id",
-    component: ProductComponent,
+    path: "store",
+    component: StoreComponent,
   },
   {
     path: "**",
