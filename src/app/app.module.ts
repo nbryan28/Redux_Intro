@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/home/home.component';
 import { HeaderComponent } from './Home/header/header.component';
+import { StoreComponent } from './Home/store/store.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -14,10 +16,12 @@ import { HeaderComponent } from './Home/header/header.component';
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
