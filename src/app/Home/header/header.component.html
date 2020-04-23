@@ -9,10 +9,21 @@
         <a class="nav-link pointer" (click)="OpenLink('/store')">Store</a>
       </li>
       <li class="nav-item font-size">
-        <a class="nav-link" href="#">Forum</a>
+        <a class="nav-link pointer">Forum</a>
       </li>
       <li class="nav-item font-size">
-        <a class="nav-link" href="#">Catalog</a>
+        <a class="nav-link pointer" (click)="OpenLink('/catalog')">Catalog</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle pointer font-size"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu menu-item" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item menu-item">Action</a>
+          <a class="dropdown-item menu-item">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item menu-item">Something else here</a>
+        </div>
       </li>
      
     </ul>

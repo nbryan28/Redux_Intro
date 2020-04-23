@@ -8,6 +8,7 @@ import { AppReducers} from './redux/app.reducer';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './Home/home/home.component';
 import { StoreComponent } from './Home/store/store.component';
+import { CatalogComponent } from "./Home/catalog/catalog.component";
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "store",
     component: StoreComponent,
+  },
+  {
+    path: "catalog",
+    component: CatalogComponent,
   },
   {
     path: "**",
