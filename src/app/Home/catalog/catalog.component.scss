@@ -1,9 +1,17 @@
 .block {
   width: 100%;
-  height: 600px;
+  height: 100%;
   margin-top: 76px;
 }
 
-.body-color{
-  background-color: #E09572;
+.body-color {
+  background-color: #e09572;
+  height: 970px;
+  overflow-y: hidden;
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  float:right;
 }

@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CatalogComponent } from './Home/catalog/catalog.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +21,7 @@ import { CatalogComponent } from './Home/catalog/catalog.component';
     StoreComponent,
     CatalogComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
