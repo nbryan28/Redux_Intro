@@ -10,6 +10,7 @@ import { HeaderComponent } from './Home/header/header.component';
 import { StoreComponent } from './Home/store/store.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CatalogComponent } from './Home/catalog/catalog.component';
+import { CountryComponent } from './Components/country/country.component';
 
 
 
@@ -20,6 +21,7 @@ import { CatalogComponent } from './Home/catalog/catalog.component';
     HeaderComponent,
     StoreComponent,
     CatalogComponent,
+    CountryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   bootstrap: [AppComponent],

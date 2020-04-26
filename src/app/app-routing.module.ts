@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './Home/home/home.component';
 import { StoreComponent } from './Home/store/store.component';
 import { CatalogComponent } from "./Home/catalog/catalog.component";
+import { CountryComponent } from './Components/country/country.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: "catalog",
     component: CatalogComponent,
+  },
+  {
+    path: "country/:countryName",
+    component: CountryComponent,
   },
   {
     path: "**",
