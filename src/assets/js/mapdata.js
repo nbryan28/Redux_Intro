@@ -1159,10 +1159,10 @@ var simplemaps_worldmap_mapdata = {
     },
     US: {
       name: "United States",
-      description: "default",
+      description: "<img src=\"assets/img/countries/USA.jpg\" style=\"width: 300px\"/>",
       color: "default",
       hover_color: "default",
-      url: "default",
+      url: "https://localhost:4200/country/United%20States",
     },
     UZ: {
       name: "Uzbekistan",
