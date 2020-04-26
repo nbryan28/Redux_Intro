@@ -16,8 +16,6 @@ export class HeaderComponent implements OnInit {
   }
 
   OpenLinkRefresh() {
-    this.router
-      .navigateByUrl('/', { skipLocationChange: true })
-      .then(() => this.router.navigate(['/catalog']));
+   window.location.href = "https://localhost:4200/catalog";
   }
 }
